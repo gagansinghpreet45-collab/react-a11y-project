@@ -1,45 +1,28 @@
-# Incubyte String Calculator Template
+# React A11y Project – String Calculator
 
-## Overview
+This project was developed as part of the Incubyte Frontend Engineering task.
 
-This project contains a **String Calculator template** built using React. The primary goal is for candidates to implement the functionality and improve accessibility in the provided UI component.
+## 🧩 Overview
 
-## Project Structure
+A small React + TypeScript application that implements a **String Calculator** using a **Test-Driven Development (TDD)** approach and enhances the UI for **Web Accessibility (a11y)** compliance.
 
-- **src/**
-  - `App.tsx`: The React component with accessibility issues.
-  - `stringCalculator.ts`: Implementation of the String Calculator logic (to be developed).
-- **tests/**
-  - `stringCalculator.test.ts`: Suite of tests for the String Calculator functionality (to be developed).
+## ⚙️ Features
 
-## Getting Started
+- **TDD Workflow** – Unit tests written first using Vitest.
+- **String Calculator Logic** – Handles comma and newline-separated numbers.
+- **Accessibility Improvements**
+  - Replaced non-semantic `<div>` elements with semantic `<button>`.
+  - Added proper labels for form controls and alt text for images.
+  - Announced dynamic calculation results using `aria-live`.
+  - Improved color contrast and focus visibility for keyboard users.
+- **Verified with Lighthouse** – Accessibility score: **93/100** (WCAG-AA compliant).
+- Fully keyboard-navigable and screen-reader-friendly.
 
-1. **Clone the Repository**
+## 🚀 Setup
 
-   ```bash
-   git clone https://github.com/yourusername/string-calculator.git
-   cd string-calculator
-   ```
+Clone the repository and install dependencies:
 
-2. **Install Dependencies**
-
-   ```bash
-   npm install
-   ```
-
-3. **Run the Application**
-
-   ```bash
-   npm start
-   ```
-
-4. **Run Tests**
-
-   ```bash
-   npm test
-   ```
-
-## Task for Candidates
-
-- Implement the functionality of the String Calculator following TDD best practices.
-- Resolve accessibility issues in the `App.tsx`.
+```bash
+git clone https://github.com/gagansinghpreet45/react-a11y-project.git
+cd react-a11y-project
+npm install
